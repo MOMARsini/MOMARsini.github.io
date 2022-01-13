@@ -9,11 +9,6 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
 }
 
 html {
@@ -721,7 +716,7 @@ html {
     }
 
     * {
-        scroll-behavior: auto;
+        scroll-behavior: auto !important;
     }
 
     .name {
