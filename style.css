@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 html {
@@ -377,7 +376,6 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
     width: 100%;
     padding: 0 10vw;
     color: #fff;
