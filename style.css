@@ -13,7 +13,6 @@
 
 html {
     scroll-padding: 125px;
-    overflow-x: hidden;
 }
 
 .logo{
@@ -341,6 +340,12 @@ html {
     padding-right: 7%;
 }
 
+.columnP {
+    float: left;
+    width: 50%;
+    padding-right: 7%;
+}
+
 .column3 {
     float: left;
     width: 33%;
@@ -348,6 +353,12 @@ html {
 }
 
 .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rowP::after {
     content: "";
     display: table;
     clear: both;
@@ -700,6 +711,18 @@ html {
     .aboutInfo::before {
         padding-top: 20% !important;
     }
+
+    .portfolioGitButton {
+        font-size: 250% !important;
+    }
+
+    .portfolioButton {
+        font-size: 200% !important;
+    }
+
+    * {
+        scroll-behavior: auto;
+    }
 }
 
 @media screen and (max-width: 1062.22px) {
@@ -717,5 +740,13 @@ html {
 
     .anim1 {
         margin-top: 10%;
+    }
+
+    .portfolioGitButton {
+        font-size: 300%;
+    }
+
+    .portfolioButton {
+        font-size: 200%;
     }
 }
