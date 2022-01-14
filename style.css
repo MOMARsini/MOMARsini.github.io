@@ -705,6 +705,12 @@ html {
         width: 18% !important;
     }
     
+    .aboutInfo::before {
+        margin: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+
+    }
 
     .portfolioGitButton {
         font-size: 250% !important;
