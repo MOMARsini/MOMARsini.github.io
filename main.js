@@ -3,6 +3,10 @@ const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.main-header .nav-links li')
 const effect = document.querySelector("#effect");
 
+function toggle() {
+    document.getElementById("menu-btn").checked = false;
+}
+
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
     if(scrollPos > 10){
@@ -15,7 +19,7 @@ window.addEventListener('scroll', () => {
     sections.forEach( section => {
         const sectionTop = section.offsetTop;
         const sectionHight = section.clientHeight;
-        if(pageYOffset >= ((sectionTop - sectionHight / 3) )){
+        if(pageYOffset >= ((sectionTop - sectionHight / 3) +700)){
             current = section.getAttribute('id');
         }
     })
@@ -27,7 +31,7 @@ window.addEventListener('scroll', () => {
         }
     })
 
-    if(window.scrollY >= 500) {
+    if(window.scrollY >= 100) {
         effect.style.opacity = '1';
         effect.style.transform = 'translateX(0px)';
         effect.style.transition = '1s ease-in-out';
@@ -35,4 +39,5 @@ window.addEventListener('scroll', () => {
         effect.style.opacity = '0';
         effect.style.transform = 'translateX(-50px)';
     }
-}) 
+})
+
