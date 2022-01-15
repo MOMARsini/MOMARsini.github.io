@@ -1,6 +1,7 @@
 const header = document.querySelector('.main-header');
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.main-header .nav-links li')
+const effect = document.querySelectorAll("#effect");
 
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
@@ -25,4 +26,13 @@ window.addEventListener('scroll', () => {
             li.classList.add('active')
         }
     })
-})
+
+    if(window.scrollY >= 500) {
+        effect.style.opacity = '1';
+        effect.style.transform = 'translateX(0px)';
+        effect.style.transition = '1s ease-in-out';
+    } else {
+        effect.style.opacity = '0';
+        effect.style.transform = 'translateX(-50px)';
+    }
+}) 

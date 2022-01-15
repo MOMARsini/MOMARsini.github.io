@@ -36,6 +36,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    padding-bottom: 7.5%;
 }
 
 .squareDoc {
@@ -296,27 +297,23 @@ html {
     }
 }
 
-.aboutInfo::before {
-    content:"";
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    filter: brightness(10%);
-}
-
 .backIMG {
     pointer-events: none;
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
+    filter: blur(5px);
+    transform: scale(1.1);
+    filter: brightness(25%); 
+}
+
+#effect {
+    width: 100;
 }
 
 .myInfo {
     position: relative;
-    backdrop-filter: blur(5px);
     text-transform: uppercase;
     text-align: center;
     padding: 2rem;
@@ -708,13 +705,6 @@ html {
 
     .imgSVG {
         width: 18% !important;
-    }
-    
-    .aboutInfo::before {
-        margin: 0 !important;
-        height: 100% !important;
-        width: 100% !important;
-
     }
 
     .portfolioGitButton {
