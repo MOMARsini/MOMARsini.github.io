@@ -23,6 +23,7 @@ html {
 .container {
     width: 80%;
     margin: 2rem auto;
+    padding-top: 3%;
 }
 
 .container p {
@@ -36,7 +37,6 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    padding-bottom: 7.5%;
 }
 
 .squareDoc {
@@ -190,7 +190,7 @@ html {
 }
 
 .anim1 {
-    margin-top: 10.65%;
+    margin-top: 17%;
     width: 17.5%;
     animation: submarineDude 5s step-end infinite;
     position: absolute;
@@ -244,7 +244,7 @@ html {
 }
 
 .anim2 {
-    margin-top: 10.65%;
+    margin-top: 17%;
     width: 17.5%;
     animation: submarineDude2 5s step-end infinite;
     position: absolute;
@@ -300,16 +300,12 @@ html {
 .backIMG {
     pointer-events: none;
     position: absolute;
-    width: 100%;
+    width: 95.25%;
     height: 100%;
     z-index: -1;
     filter: blur(5px);
     transform: scale(1.1);
     filter: brightness(25%); 
-}
-
-#effect {
-    width: 100;
 }
 
 .myInfo {
@@ -696,11 +692,11 @@ html {
     }
 
     .anim2 {
-        margin-top: 8% !important;
+        margin-top: 13% !important;
     }
 
     .anim1 {
-        margin-top: 8% !important;
+        margin-top: 13% !important;
     }
 
     .imgSVG {
@@ -731,14 +727,6 @@ html {
 
     .imgSVG {
         width: 28%;
-    }
-    
-    .anim2 {
-        margin-top: 10%;
-    }
-
-    .anim1 {
-        margin-top: 10%;
     }
 
     .portfolioGitButton {

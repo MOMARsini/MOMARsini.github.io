@@ -1,7 +1,7 @@
 const header = document.querySelector('.main-header');
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.main-header .nav-links li')
-const effect = document.querySelectorAll("#effect");
+const effect = document.querySelector("#effect");
 
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
     sections.forEach( section => {
         const sectionTop = section.offsetTop;
         const sectionHight = section.clientHeight;
-        if(pageYOffset >= (sectionTop - sectionHight / 3 -75)){
+        if(pageYOffset >= ((sectionTop - sectionHight / 3) )){
             current = section.getAttribute('id');
         }
     })
