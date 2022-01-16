@@ -5,6 +5,10 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
         <link href="style.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <title>Omar Pérez</title>
         <link rel="shortcut icon" href="img/svg/Font_O.svg"/>
     </head>
@@ -37,7 +41,7 @@
         <img src="img/codigo.jpg" class="backIMG">
         <section class="aboutInfo" id="about">
             <div class="myInfo">
-                <img src="img/me.jpg"/>
+                <img src="img/me-min.jpg"/>
                 <div class="textMyInfo">
                     <p class="name">Hello World!</p>
                     <h3 class="name anim3">I'm Omar Pérez</h3>
@@ -91,23 +95,23 @@
                 </div>
             </div>
             <section  id="portfolio" style="padding-top: 10%;">
-                <h3 class="title">Portfolio</h3><br>
+                <h3 class="title">Portfolio</h3>
                 <div class="row">
                     <div class="column">
                         <div class="nes-container with-title">
                             <h3 class="title">CREmx Project</h3>
-                            <p class="textWhoAmI">Solidary Project I participated in my University social service, I worked in a team and did HTML and CSS files modifications, by clicking the icons below it redirects to a GitHub Repo that shows only the things I did, you can also watch the implementation by clicking the other icons (you need a mobile browser or open the link with a smartphone).</p>
+                            <p class="textWhoAmI">Solidary Project I participated in my University's social service, I worked in a team and did HTML and CSS files modifications, I mostly worked at the hamburguer menu mobile implementation and the convertion of the Informe Anual to a mobile version. By clicking the icons below it redirects to a GitHub Repo that shows only the things I did, you can also watch the implementation by clicking the other icons (you need a mobile browser or open the link with a smartphone).</p>
                             <div class="rowP">
                                 <div class="columnP">
-                                    <a class="pButton" href="https://github.com/omarperezgonzalez/CremxSocialService" target="_blank"><button class="fa fa-github portfolioGitButton"></button></a>
+                                    <a class="pButton" href="https://github.com/omarperezgonzalez/CremxSocialService" target="_blank"><button class="fa fa-github portfolioGitButton" title="Go to Github"></button></a>
                                 </div>
                                 <div class="columnP">
                                     <div class="rowP">
                                         <div class="columnP">
-                                            <a class="pButton" href="https://www.cremx.org/creabc/?ancho=1536&alto=864" target="_blank"><button class="fa fa-external-link portfolioButton"></button></a>
+                                            <a class="pButton" href="https://www.cremx.org/creabc/?ancho=1536&alto=864" target="_blank"><button class="fa fa-globe portfolioButton" title="Go to Website"></button></a>
                                         </div>
                                         <div class="columnP">
-                                            <a class="pButton" href="https://www.cremx.org/index.php?CONT=66" target="_blank"><button class="fa fa-external-link portfolioButton"></button></a>
+                                            <a class="pButton" href="https://www.cremx.org/index.php?CONT=66" target="_blank"><button class="fa fa-globe portfolioButton" title="Go to Website"></button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -116,20 +120,13 @@
                         <br><br>
                         <div class="nes-container with-title">
                             <h3 class="title">Ternium Project</h3>
-                            <p class="textWhoAmI">Solidary Project I participated in my University social service, I worked in a team and did HTML and CSS files modifications, by clicking the icons below it redirects to a GitHub Repo that shows only the things I did, you can also watch the implementation by clicking the other icons (you need a mobile browser or open the link with a smartphone).</p>
+                            <p class="textWhoAmI">Team's project I worked with 4 more friends and we did a web training app, the goal of it is to create videogames that can help the worker to understand how things work at Ternium. I worked mostly at the game development and design team, but also did some Rest API so the games and the database worked to show some analytics in the web app, a really challenging project I loved to work with the team.</p>
                             <div class="rowP">
                                 <div class="columnP">
-                                    <a class="pButton" href="https://github.com/omarperezgonzalez/CremxSocialService" target="_blank"><button class="fa fa-github portfolioGitButton"></button></a>
+                                    <a class="pButton" href="https://github.com/omarperezgonzalez/CremxSocialService" target="_blank"><button class="fa fa-github portfolioGitButton" title="Go to Github"></button></a>
                                 </div>
                                 <div class="columnP">
-                                    <div class="rowP">
-                                        <div class="columnP">
-                                            <a class="pButton" href="https://www.cremx.org/creabc/?ancho=1536&alto=864" target="_blank"><button class="fa fa-external-link portfolioButton"></button></a>
-                                        </div>
-                                        <div class="columnP">
-                                            <a class="pButton" href="https://www.cremx.org/index.php?CONT=66" target="_blank"><button class="fa fa-external-link portfolioButton"></button></a>
-                                        </div>
-                                    </div>
+                                    <a class="pButton" href="https://www.youtube.com/watch?v=s6oReeFBOds" target="_blank"><button class="fa fa-youtube-play ytButton" title="Go to Youtube"></button></a>
                                 </div>
                             </div>
                         </div>
@@ -137,54 +134,47 @@
                     <div class="column">
                         <div class="nes-container with-title">
                             <h3 class="title">Cáritas App</h3>
-                            <p class="textWhoAmI">Solidary Project I participated in my University social service, I worked in a team and did HTML and CSS files modifications, by clicking the icons below it redirects to a GitHub Repo that shows only the things I did, you can also watch the implementation by clicking the other icons (you need a mobile browser or open the link with a smartphone).</p>
+                            <p class="textWhoAmI">Team's project I worked with other 4 friends and we did an Android app in association with Cáritas de Monterrey, a non-lucrative and volunteer group. I worked only at Android development and design, my most important contribution was the design and programming of the "Donaciones" window were the user is able to look up the donations he has done to this association and the exact days of the transaction, the user was able to donate by touching a button in this same window.</p>
                             <div class="rowP">
                                 <div class="columnP">
-                                    <a class="pButton" href="https://github.com/omarperezgonzalez/CremxSocialService" target="_blank"><button class="fa fa-github portfolioGitButton"></button></a>
+                                    <a class="pButton" href="https://github.com/omarperezgonzalez/CremxSocialService" target="_blank"><button class="fa fa-github portfolioGitButton" title="Go to Github"></button></a>
                                 </div>
                                 <div class="columnP">
-                                    <div class="rowP">
-                                        <div class="columnP">
-                                            <a class="pButton" href="https://www.cremx.org/creabc/?ancho=1536&alto=864" target="_blank"><button class="fa fa-external-link portfolioButton"></button></a>
-                                        </div>
-                                        <div class="columnP">
-                                            <a class="pButton" href="https://www.cremx.org/index.php?CONT=66" target="_blank"><button class="fa fa-external-link portfolioButton"></button></a>
-                                        </div>
-                                    </div>
+                                    <a class="pButton" href="https://www.youtube.com/watch?v=CHy7NxgeP34" target="_blank"><button class="fa fa-youtube-play ytButton" title="Go to Youtube"></button></a>
                                 </div>
                             </div>
                         </div>
                         <br><br>
                         <div class="nes-container with-title">
                             <h3 class="title">Multiagent/Unity Project</h3>
-                            <p class="textWhoAmI">Solidary Project I participated in my University social service, I worked in a team and did HTML and CSS files modifications, by clicking the icons below it redirects to a GitHub Repo that shows only the things I did, you can also watch the implementation by clicking the other icons (you need a mobile browser or open the link with a smartphone).</p>
+                            <p class="textWhoAmI">If I can define this project it would be like the hardest one I have ever done, I worked in a team with 3 friends and we did a Python multiagent system that simulates data from a traffic light, this system was later adapted to Unity and worked with the Python program done before. I worked mostly at the Python and Unity programming, the connection with these two with a Rest API, I also helped with the Unity design and 3D model development.</p>
                             <div class="rowP">
                                 <div class="columnP">
-                                    <a class="pButton" href="https://github.com/omarperezgonzalez/CremxSocialService" target="_blank"><button class="fa fa-github portfolioGitButton"></button></a>
+                                    <a class="pButton" href="https://github.com/omarperezgonzalez/CremxSocialService" target="_blank"><button class="fa fa-github portfolioGitButton" title="Go to Github"></button></a>
                                 </div>
                                 <div class="columnP">
-                                    <div class="rowP">
-                                        <div class="columnP">
-                                            <a class="pButton" href="https://www.cremx.org/creabc/?ancho=1536&alto=864" target="_blank"><button class="fa fa-external-link portfolioButton"></button></a>
-                                        </div>
-                                        <div class="columnP">
-                                            <a class="pButton" href="https://www.cremx.org/index.php?CONT=66" target="_blank"><button class="fa fa-external-link portfolioButton"></button></a>
-                                        </div>
-                                    </div>
+                                    <a class="pButton" href="https://www.youtube.com/watch?v=bIXD_24K2P8" target="_blank"><button class="fa fa-youtube-play ytButton" title="Go to Youtube"></button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <br><br><br><br><br>
-            <section  id="hobbies">
+            <section  id="hobbies" style="padding-top: 10%;">
                 <h3 class="title" id="hobbies">Hobbies</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem esse debitis doloribus dicta nulla quia natus molestiae, harum culpa earum magnam commodi itaque? Iure, facilis voluptas unde earum consequuntur pariatur!
-                Aliquid veritatis aspernatur omnis deleniti quae animi vel expedita similique, tempore modi. Nesciunt qui vel eveniet aperiam numquam dolorem tempora. Ex accusantium impedit quibusdam quisquam cupiditate rem assumenda possimus incidunt?</p> 
+                <p class="textWhoAmI">Want to know more about me? Check this pictures!!</p>
+                <div class="regular slider">
+                    <div><img src="img/carouselPics/pic1.jpg" style="width: 90%;"> <p class="textWhoAmI">O</p> </div>
+                    <div><img src="img/carouselPics/pic2.jpg" style="width: 90%;"> <p class="textWhoAmI">A</p> </div>
+                    <div><img src="img/carouselPics/pic5.jpg" style="width: 90%;"> <p class="textWhoAmI">L</p> </div>
+                    <div><img src="img/carouselPics/pic3.jpg" style="width: 90%;"> <p class="textWhoAmI">E</p> </div>
+                    <div><img src="img/carouselPics/pic4.jpeg" style="width: 65%;"> <p class="textWhoAmI">I</p> </div>
+                    <div><img src="img/carouselPics/editPic1-min.jpg" style="width: 60%;"> <p class="textWhoAmI">U</p> </div>
+                    <div><img src="img/carouselPics/editPic2-min.jpg" style="width: 65%;"> <p class="textWhoAmI">P</p> </div>
+                    <div><img src="img/carouselPics/editPic3-min.jpg" style="width: 60%;"> <p class="textWhoAmI">W</p> </div>
+                </div>
             </section>
-            <br><br><br><br><br>
-            <section  id="contact">
+            <section  id="contact" style="padding-top: 5%;">
                 <h3 class="title" id="contact">Contact Me</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum mollitia nulla necessitatibus voluptas fugiat, sapiente asperiores rem eius. Nihil eligendi doloribus quibusdam maiores exercitationem harum quis magni eveniet numquam dolores.
                 Quis iusto optio, blanditiis illo ipsam amet pariatur aperiam facere est! A quos tenetur id sit dolorum sunt. Consequuntur, ad sint vitae deserunt placeat error repellat tempora possimus culpa qui.
@@ -197,11 +187,12 @@
                 <img src="img/WalkSecond.png" class="anim2" >
             </div>
         </div>
+        <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     </body>
     <div class="foot">
         <footer>
             <p>Omar Pérez González 2022 <br> Using Google Fonts, Bootstrap 4  NES.css & ColorHunt</p>
         </footer>
     </div>
-    <script src="main.js"></script>
 </html>

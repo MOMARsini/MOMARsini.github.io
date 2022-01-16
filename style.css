@@ -206,6 +206,27 @@ html {
     transform: scale(1.3) rotate(2.3deg);
 }
 
+.ytButton {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 250%;
+    margin-top: 5%;
+    color: #010038;
+    display: inline;
+}
+
+.ytButton:focus{
+    outline: none !important;
+}
+
+.ytButton:hover{
+    filter: brightness(75%);
+    transition: all 0.5s ease-out;
+    -webkit-transform: scale(2.5) rotate(0.01deg);
+    transform: scale(1.3) rotate(2.3deg);
+}
+
 .auxP {
     margin-left: 3.2%;
 }
@@ -497,6 +518,10 @@ html {
 .foot footer p {
     font-size: 50%;
     color: #fff;
+}
+
+.slider {
+    height: 40%;
 }
 
 @media screen and (max-width: 767px) {
