@@ -764,6 +764,10 @@ html {
     .name {
         font-size: 90%;
     }
+    
+    .container {
+        padding-top: 1% !important;
+    }
 }
 
 @media screen and (max-width: 1062.22px) {
