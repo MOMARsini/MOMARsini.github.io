@@ -8,14 +8,13 @@ function toggle() {
 }
 
 $(document).on('ready', function () {
-    $(".regular").slick({
+    $(".slider").slick({
         dots: true,
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 3,
-        autoplaySpeed: 2000,
+        slidesToScroll: 1,
+        autoplaySpeed: 1500,
         autoplay: true,
-        adaptiveHeight: true,
         responsive: [
             {
               breakpoint: 1024,
