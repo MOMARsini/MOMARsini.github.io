@@ -21,12 +21,13 @@ html {
 }
 
 .anim3 {
+    font-size: 120%;
     display: block;
-    animation: typing 2s steps(14), blink .274s infinite step-end alternate;
+    animation: typing 2s steps(20), blink .274s infinite step-end alternate;
     overflow: hidden;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 14.5ch;
+    width: 100%;
 }
 
 @keyframes typing {
