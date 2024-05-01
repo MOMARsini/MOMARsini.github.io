@@ -1,200 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <link href="style.css" rel="stylesheet"/>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/styles/home.css" rel="stylesheet" />
+        <link href="/styles/style.css" rel="stylesheet" />
+
         <title>Omar Pérez</title>
-        <link rel="shortcut icon" href="img/svg/Font_O.svg"/>
+        <link rel="Page icon" href="/logos/rl.svg" />
+
+        <!--GoogleFonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
     </head>
-    
-    <body>
-        <header class="main-header">
-            <div class="logo">
-                <h1>&ltOP/&gt</h1>
-            </div>
-            <input type="checkbox" class="menu-btn" id="menu-btn">
-            <label for="menu-btn" class="menu-icon">
-                <span class="menu-icon__line"></span>
-            </label>
-            <ul class="nav-links">
-                <li class="nav-link about">
-                    <a href="#about" onclick="toggle()">About</a>
-                </li>
-                <li class="nav-link portfolio">
-                    <a href="#portfolio" onclick="toggle()">Portfolio</a>
-                </li>
-                <li class="nav-link hobbies">
-                    <a href="#hobbies" onclick="toggle()">Hobbies</a>
-                </li>
-                <li class="nav-link contact">
-                    <a href="#contact" onclick="toggle()">Contact</a>
-                </li>
-            </ul>
-        </header>
 
-        <img src="img/codigo.jpg" class="backIMG">
-        <section class="aboutInfo" id="about">
-            <div class="myInfo">
-                <img src="img/me-min.jpg"/>
-                <div class="textMyInfo">
-                    <p class="name">Hello World!</p>
-                    <h3 class="name anim3">I'm Omar Pérez</h3>
-                    <p class="name">CS Student</p>
-                    <a class="aButton" href="https://github.com/omarperezgonzalez" target="_blank" title="Go to Github"><button class="fa fa-github socialMediaButton"></button></a>
-                    <a class="aButton posAux" href="https://www.linkedin.com/in/omar-p%C3%A9rez-gonz%C3%A1lez-805654222/" target="_blank" title="Go to Linkedin"><button class="fa fa-linkedin socialMediaButton"></button></a>
-                    <a class="aButton posAux" href="/docs/Omar-Perez-Resume.pdf" target="_blank" title="Go to my CV"><button class="fa fa-file-pdf-o pdFile"><p>CV</p></button></a>
-                </div>
-            </div>
-        </section>
+    <body data-barba="wrapper">
+        <!--Content that will not change between pages(navbar)-->
+        <nav class="navbar">
+          <div class="nav--flex--container--1">
+            <div class="navbar--icon">[OPG]</div>
+          </div>
 
-        <div class="container" id="effect">
-            <div class="row">
-                <div class="column">
-                    <h3>About me</h3>
-                    <p class="textWhoAmI">I'm a student of Computer Science from Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM), I like to work at game design, Android design and frontEnd development. I am passionate about entertainment technology, movies and photography, in love to taking pictures of people and nature, hanging out with friends, playing videogames and learning more aboute these industry, trying to understand a game in a logic/programmatically way.</p>
-                    <br>
+          <div class="nav--flex--container--2">
+            <div class="navbar--btn"><a>HOME</a></div>
+            <div class="navbar--btn"><a>WORK</a></div>
+            <div class="navbar--btn"><a>CONTACT</a></div>
+          </div>
+
+          <div class="nav--bottom--line"></div>
+        </nav>
+
+        <!--Content of the page-->
+        <!--Main Home Section-->
+        <div data-barba="container" class="home">
+            <section class="landing">
+                <div class="landing--text--container">
+                    <div class="landing--text--1 landing--header">I'M OMAR</div>
+                    <img src="/img/6.jpg" class="landing--img--1 landing--img">
+
+                    <div class="landing--text--2 landing--header">WEB</div>
+                    <img src="/img/6.jpg" class="landing--img--2 landing--img">
+                    
+                    <div class="landing--text--3 landing--header">DESIGNER</div>
+                    <img src="/img/6.jpg" class="landing--img--3 landing--img">
+                    
+                    <div class="landing--text--4 landing--header">DEVELOPER</div>
                 </div>
-                <div class="column">
-                    <h3>Skills</h3>
-                    <div class="row">
-                        <div class="column3">
-                            <button class="ico"><img src="img/svg/html-1.svg" class="imgSVG"><p class="textClean">HTML</p></button>
-                        </div>
-                        <div class="column3">
-                            <button class="ico"><img src="img/svg/css-3.svg" class="imgSVG"><p class="textClean">CSS</p></button>
-                        </div>
-                        <div class="column3">
-                            <i class="fab fa-js"></i>
-                            <button class="ico"><img src="img/svg/javascript-1.svg" class="imgSVG"><p class="textClean">JS</p></button>
-                        </div>
-                        <div class="column3">
-                            <button class="ico"><img src="img/svg/c.svg" class="imgSVG"><p class="textClean">C++</p></button>
-                        </div>
-                        <div class="column3">
-                            <button class="ico"><img src="img/svg/c--4.svg" class="imgSVG"><p class="textClean">C#</p></button>
-                        </div>
-                        <div class="column3">
-                            <button class="ico"><img src="img/svg/unity-69.svg" class="imgSVG"><p class="textClean">Unity</p></button>
-                        </div>
-                        <div class="column3">
-                            <button class="ico"><img src="img/svg/adobe-photoshop-2.svg" class="imgSVG"><p class="textClean">PS</p></button>
-                        </div>
-                        <div class="column3">
-                            <button class="ico"><img src="img/svg/lightroom-cc.svg" class="imgSVG"><p class="textClean">LR</p></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section  id="portfolio" style="padding-top: 5%;">
-                <h3 class="title">Portfolio</h3>
-                <div class="row">
-                    <div class="column">
-                        <div class="nes-container with-title">
-                            <h3 class="title">CVA Project</h3>
-                            <p class="textWhoAmI">At CVA (Centro Virtual de Aprendizaje) I learned a lot about web development and design. The goal of this association is to bring interactive and educative courses to people in Mexico. My main tasks were to edit and fix some courses and develop a interactive german course, where I worked with a partner and created some interesting games and activities. Sadly, I can't show what I did due to confidenciality, but we can talk about it!  </p>
-                            <div class="rowP">
-                                <div class="columnP">
-                                    <a class="pButton" href="https://www.centroscomunitariosdeaprendizaje.org.mx/" target="_blank"><button class="fa fa-globe portfolioGitButton" title="Go to CVA's Oficial Page"></button></a>
-                                </div>
-                                <div class="columnP">
-                                    <div class="rowP">
-                                        <div class="columnP">
-                                            <a class="pButton" href="https://www.facebook.com/CentroVirtualdeAprendizaje" target="_blank"><button class="fa fa-facebook portfolioButton" title="Go to CVA's Facebook"></button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br><br>
-                        <div class="nes-container with-title">
-                            <h3 class="title">Castle of the Hamstervania</h3>
-                            <p class="textWhoAmI">Team's project wich I worked with 4 more friends and we did a videogame, the goal of it is to create our own videogame by modeling using Blender and developing using Unity. I worked at the game by doing most of the animations using Blender and Unity's Animator, I also worked at the developing team by scripting game mechanics and testing the game. I loved doing this project as we created a videogame by ourselves.</p>
-                            <div class="rowP">
-                                <div class="columnP">
-                                    <a class="pButton" href="https://github.com/4lfr3d/Castle-of-the-Hamstervenia_" target="_blank"><button class="fa fa-github portfolioGitButton" title="Go to Github"></button></a>
-                                </div>
-                                <div class="columnP">
-                                    <a class="pButton" href="https://itoc.itch.io/castle-of-the-hamstervenia" target="_blank"><button class="fa fa-gamepad ytButton" title="Go to Itch.io"></button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="nes-container with-title">
-                            <h3 class="title">CEMEX Guesstimator</h3>
-                            <p class="textWhoAmI">Team's project I worked with 4 more friends and we did a task stimation along with CEMEX. In this project I worked in frontend developing in Angular and backend where we used Flask as an API and microservice for the web application.I learned a lot of web applications, APIs and microservices. The main goal of this web application is to stimate how much time (based in storypoints) would a person take to complete a task.</p>
-                            <div class="rowP">
-                                <div class="columnP">
-                                    <a class="pButton" href="https://github.com/omarperezgonzalez/cemex-guesstimator" target="_blank"><button class="fa fa-github portfolioGitButton" title="Go to Github FrontEnd"></button></a>
-                                    <a class="pButton" href="https://github.com/omarperezgonzalez/cemex-guesstimator-backend" target="_blank"><button class="fa fa-github portfolioGitButton" title="Go to Github Backend"></button></a>
-                                </div>
-                                <div class="columnP">
-                                    <a class="pButton" href="https://youtu.be/hn3_zl_qLKQ" target="_blank"><button class="fa fa-youtube-play ytButton" title="Go to Youtube"></button></a>
-                                </div>
-                            </div>
-                        </div>
-                        <br><br>
-                        <div class="nes-container with-title">
-                            <h3 class="title">Multiagent/Unity Project</h3>
-                            <p class="textWhoAmI">If I can define this project it would be like the hardest one I have ever done, I worked in a team with 3 friends and we did a Python multiagent system that simulates data from a traffic light, this system was later adapted to Unity and worked with the Python program done before. I worked mostly at the Python and Unity programming, the connection with these two with a Rest API.</p>
-                            <div class="rowP">
-                                <div class="columnP">
-                                    <a class="pButton" href="https://github.com/omarperezgonzalez/Project-Multiagent" target="_blank"><button class="fa fa-github portfolioGitButton" title="Go to Github"></button></a>
-                                </div>
-                                <div class="columnP">
-                                    <a class="pButton" href="https://www.youtube.com/watch?v=bIXD_24K2P8" target="_blank"><button class="fa fa-youtube-play ytButton" title="Go to Youtube"></button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section  id="hobbies" style="padding-top: 5%;">
-                <h3 class="title" id="hobbies">Hobbies</h3>
-                <p class="textWhoAmI">Want to know more about me? Check this pictures!!</p>
-                <div class="slider">
-                    <div class="slick-slide"><img src="img/carouselPics/pic1.jpg"></div>
-                    <div class="slick-slide"><img src="img/carouselPics/pic2.jpg"></div>
-                    <div class="slick-slide"><img src="img/carouselPics/pic5.jpg"></div>
-                    <div class="slick-slide"><img src="img/carouselPics/pic6.jpeg"></div>
-                    <div class="slick-slide"><img src="img/carouselPics/pic3.jpg"></div>
-                    <div class="slick-slide"><img src="img/carouselPics/pic4.jpeg"></div>
-                    <div class="slick-slide"><img src="img/carouselPics/editPic1-min.jpg"></div>
-                    <div class="slick-slide"><img src="img/carouselPics/editPic2-min.jpg"></div>
-                    <div class="slick-slide"><img src="img/carouselPics/editPic3-min.jpg"></div>
-                </div>
-            </section>
-            <section  id="contact" style="padding-top: 5%;">
-                <h3 class="title" id="contact">Contact Me</h3>
-                <div class="row" style="padding-top: 25px;">
-                    <div class="column4" style="text-align: center !important;">
-                        <a class="aButton" href="https://github.com/omarperezgonzalez" target="_blank" title="Go to my Github"><button class="fa fa-github contactB"></button></a>
-                    </div>
-                    <div class="column4" style="text-align: center !important;">
-                        <a class="aButton" href="https://www.linkedin.com/in/omar-p%C3%A9rez-gonz%C3%A1lez-805654222/" target="_blank" title="Go to my Linkedin"><button class="fa fa-linkedin contactB"></button></a>
-                    </div>
-                    <div class="column4" style="text-align: center !important;">
-                        <a class="aButton" href="https://www.instagram.com/m0mar__/" target="_blank" title="Go to my Instagram"><button class="fa fa-instagram contactB"></button></a>
-                    </div>
-                </div>
+
+                <div class="landing--text--about">Passionate about web design and the trends that emerge, I also love to code</div>
+                <img src="/img/DSC_1149.jpg" class="landing--img--omar">
             </section>
         </div>
-        <div style="margin-left: 27.5%">
-            <img src="img/WalkFirst.png" class="anim1" >
-            <img src="img/WalkSecond.png" class="anim2" >
-        </div>
-        <script src="main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+        <!--Main JS-->
+        <script defer src="/scripts/main.js"></script>
+
+        <!--GSAP and plugins-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        
+        <!--Lenis-->
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+
+        <!--Barba JS-->
+        <script src="https://unpkg.com/@barba/core"></script>
     </body>
-    <div class="foot">
-        <footer>
-            <p>Omar Pérez González 2023 <br> Using Google Fonts, Bootstrap 4  NES.css & ColorHunt</p>
-        </footer>
-    </div>
 </html>
