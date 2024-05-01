@@ -1,12 +1,11 @@
 :root {
     --background: #121212;
     --principal: #fbf6e3; 
-    --secondary: #fff;
+    --secondary: #ecadad;
 }
 
 .home{
-    min-width: 100vw;
-    min-height: 100vh;
+    height: auto;
 
     position: relative;
 }
@@ -123,5 +122,198 @@
     bottom: 15vh;
 
     color: var(--principal);
+    font-size: 18px;
+    font-family: "Space Mono";
+}
+
+.projects{
+    min-width: 100vw;
+
+    height: fit-content;
+
+    position: relative;
+}
+
+.projects--container{
+    display: grid;
+    min-width: 75vw;
+
+    position: absolute;
+
+    margin-top: 10vh;
+
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(2, 500px);
+}
+
+.projects--element--1{
+    border: solid 3px #fbf6e3;
+
+    position: relative;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.projects--element--2{
+    border: solid 3px #fbf6e3;
+
+    position: relative;
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.projects--element--3{
+
+    position: relative;
+
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.projects--element--4{
+
+    position: relative;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.projects--element--5{
+    border: solid 3px #fbf6e3;
+
+    position: relative;
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.projects--element--6{
+    border: solid 3px #fbf6e3;
+
+    position: relative;
+
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.project--cva{
+    color: var(--principal);
+    font-family: "Space Mono";
+    font-size: 16px;
+
+    margin: auto 25px;
+
+    vertical-align: middle;
+
+}
+
+.project--technologies{
+    margin: auto;
+}
+
+.project--technologies div{
+    color: var(--principal);
+    font-family: "Space Mono";
+    font-size: 16px;
+
+    margin-bottom: 25px;
+    
+}
+
+.project--title{
+    color: var(--principal);
+    font-family: "Mulish";
+    font-weight: 800;
+    font-size: 36px;
+
+    margin: 5%;
+
+}
+
+.project--subtitle{
+    color: var(--principal);
+    font-family: "Space Mono";
     font-size: 22px;
+
+    margin: 5%;
+}
+
+.project--info{
+    position: absolute;
+    bottom: 0;
+
+    margin: 5%;
+}
+
+.project--photo{
+    max-width: 50%;
+    z-index: -1;
+
+    object-fit: contain;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: ease-in-out 0.35s;
+
+    opacity: 0;
+}
+
+.projects--element:hover .project--photo{
+    opacity: 1;
+}
+
+.projects--element:hover{
+    cursor: pointer;
+}
+
+.project--role{
+    color: var(--principal);
+    font-family: "Space Mono";
+
+}
+
+.project--date{
+    color: var(--principal);
+    font-family: "Space Mono";
+
+}
+
+.project--live{
+    color: var(--principal);
+    font-family: "Space Mono";
+    text-decoration: underline;
+}
+
+.project--live a:hover{
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.icon--techno{
+    max-width: 25%;
+
+    margin: 20px 5px;
+
+    transition: linear 0.2s;
 }
