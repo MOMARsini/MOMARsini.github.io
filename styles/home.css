@@ -34,7 +34,7 @@
 .landing--header{
     color: var(--principal);
 
-    font-size: 100px;
+    font-size: 90px;
     font-family: "Mulish";
     font-weight: 800;
 
@@ -82,6 +82,9 @@
     grid-column-end: 17;
     grid-row-start: 2;
     grid-row-end: 3;
+
+    object-position: 50% 50%;
+    filter:brightness(.4);
 }
 
 .landing--img--2{
@@ -89,6 +92,9 @@
     grid-column-end: 11;
     grid-row-start: 3;
     grid-row-end: 4;
+
+    object-position: 50% 50%;
+    filter:brightness(.5);
 }
 
 .landing--img--3{
@@ -96,18 +102,9 @@
     grid-column-end: 10;
     grid-row-start: 4;
     grid-row-end: 5;
-}
 
-.landing--img--omar{
-    position: absolute;
-
-    max-width: 250px;
-
-    top: 50%;
-    left: 25%;
-    transform: translate(-25%, -50%);
-    
-    opacity: 0;
+    object-position: 50% 50%;
+    filter:brightness(.5);
 }
 
 .landing--text--about{
@@ -119,7 +116,7 @@
     text-align: right;
 
     right: 10vw;
-    bottom: 15vh;
+    top: 80vh;
 
     color: var(--principal);
     font-size: 18px;
@@ -127,9 +124,11 @@
 }
 
 .projects{
-    min-width: 100vw;
+    padding: 10vh 0;
 
-    height: fit-content;
+    background-color: var(--principal);
+    min-width: 100vw;
+    min-height: 100%;
 
     position: relative;
 }
@@ -138,20 +137,18 @@
     display: grid;
     min-width: 75vw;
 
-    position: absolute;
+    position: relative;
 
     margin-top: 10vh;
 
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -0%);
+    margin: 0 10vw;
 
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(2, 500px);
 }
 
 .projects--element--1{
-    border: solid 3px #fbf6e3;
+    border: solid 3px #121212;
 
     position: relative;
 
@@ -162,7 +159,7 @@
 }
 
 .projects--element--2{
-    border: solid 3px #fbf6e3;
+    border: solid 3px #121212;
 
     position: relative;
 
@@ -193,7 +190,7 @@
 }
 
 .projects--element--5{
-    border: solid 3px #fbf6e3;
+    border: solid 3px #121212;
 
     position: relative;
 
@@ -204,7 +201,7 @@
 }
 
 .projects--element--6{
-    border: solid 3px #fbf6e3;
+    border: solid 3px #121212;
 
     position: relative;
 
@@ -215,7 +212,7 @@
 }
 
 .project--cva{
-    color: var(--principal);
+    color: var(--background);
     font-family: "Space Mono";
     font-size: 16px;
 
@@ -230,16 +227,17 @@
 }
 
 .project--technologies div{
-    color: var(--principal);
+    color: var(--background);
     font-family: "Space Mono";
     font-size: 16px;
 
     margin-bottom: 25px;
+    margin-left: 25px;
     
 }
 
 .project--title{
-    color: var(--principal);
+    color: var(--background);
     font-family: "Mulish";
     font-weight: 800;
     font-size: 36px;
@@ -249,7 +247,7 @@
 }
 
 .project--subtitle{
-    color: var(--principal);
+    color: var(--background);
     font-family: "Space Mono";
     font-size: 22px;
 
@@ -265,7 +263,6 @@
 
 .project--photo{
     max-width: 50%;
-    z-index: -1;
 
     object-fit: contain;
 
@@ -288,19 +285,19 @@
 }
 
 .project--role{
-    color: var(--principal);
+    color: var(--background);
     font-family: "Space Mono";
 
 }
 
 .project--date{
-    color: var(--principal);
+    color: var(--background);
     font-family: "Space Mono";
 
 }
 
-.project--live{
-    color: var(--principal);
+.project--live a{
+    color: var(--background);
     font-family: "Space Mono";
     text-decoration: underline;
 }
@@ -316,4 +313,107 @@
     margin: 20px 5px;
 
     transition: linear 0.2s;
+}
+
+.contact{
+    min-width: 100vw;
+    min-height: 100vh;
+
+    max-height: 100%;
+
+    position: relative;
+}
+
+.contact--container{
+    position: relative;
+
+    padding-top: 15vh;
+}
+
+.contact--title{
+    font-family: "Mulish";
+    font-weight: 800;
+    font-size: 110px;
+
+    color: var(--principal);
+
+    position: relative;
+    text-align: center;
+}
+
+.contact--info--container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: relative;
+
+    margin: 0 5vw;
+
+    align-items: center;
+}
+
+.contact--mail{
+    font-family: "Space Mono";
+    font-size: 50px;
+}
+
+.contact--mail a{
+    text-decoration: none;
+    color: var(--principal);
+    transition: linear 0.3s;
+
+}
+
+.contact--mail a:hover{
+    color: var(--secondary);
+}
+
+.contact--links a{
+    text-decoration: none;
+    color: var(--principal);
+    font-family: "Space Mono";
+    transition: linear 0.3s;
+
+    font-size: 28px;
+}
+
+.contact--links a:hover{
+    color: var(--secondary);
+}
+
+.contact--animation{
+    background-color: var(--principal);
+
+    min-width: 100vw;
+    min-height: 30vh;
+
+    margin-top: 20vh;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.border--animated{
+    border: solid 3px #121212;
+    background-color: transparent;
+
+    position: absolute;
+
+    min-width: 100vw;
+    min-height: 30vh;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 2.5vw;
+}
+
+.footer--element{
+    color: var(--principal);
+
+    font-family: "Space Mono";
 }
