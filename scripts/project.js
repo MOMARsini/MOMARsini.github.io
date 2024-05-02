@@ -17,6 +17,8 @@ const initProject = () => {
         ease: "power4"
       });
     });
+
+    gsap.to('.svg--circle', {rotation:"360", repeat:-1, duration: 4, ease: "linear"});
 };
 
 document.addEventListener("DOMContentLoaded", initProject);

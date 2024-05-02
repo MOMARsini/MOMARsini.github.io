@@ -12,6 +12,26 @@
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.svg--circle {
+  fill: var(--principal);
+  height: auto;
+  max-width: 7.5vw;
+  transform-origin: center;
+  width: 60%;
+
+  position: fixed;
+
+  right: 2.5vw;
+  bottom: 2.5vh;
+
+  z-index: 99;
+}
+
+.svg--circle:hover{
+    fill: var(--secondary);
 }
 
 circle {
@@ -194,15 +214,25 @@ circle {
     text-align: center;
 }
 
+.font--size{
+    font-size: 28px;
+}
+
+.two--fonts{
+    padding-top: 10vh;
+}
+
+.three--fonts{
+    padding-top: 2.5vh;
+}
+
 /*-----------------------------FONTS---------------------------------------*/
 
 .tsmorales--font--1{
     color: var(--principal);
     text-align: center;
 
-    padding-top: 10vh;
-
-    font-size: 28px;
+    
     font-family: 'Bebas Neue';
 }
 
@@ -210,9 +240,7 @@ circle {
     color: var(--principal);
     text-align: center;
 
-    padding-top: 10vh;
-
-    font-size: 28px;
+    
     font-family: 'Inter';
 }
 
@@ -220,9 +248,7 @@ circle {
     color: var(--principal);
     text-align: center;
 
-    padding-top: 2.5vh;
-
-    font-size: 28px;
+    
     font-family: 'Abril Fatface';
 }
 
@@ -230,9 +256,7 @@ circle {
     color: var(--principal);
     text-align: center;
 
-    padding-top: 2.5vh;
-
-    font-size: 28px;
+    
     font-family: 'Nothing you could do';
 }
 
@@ -240,9 +264,7 @@ circle {
     color: var(--principal);
     text-align: center;
 
-    padding-top: 2.5vh;
-
-    font-size: 28px;
+    
     font-family: 'Nixie One';
 }
 
@@ -250,39 +272,28 @@ circle {
     color: var(--principal);
     text-align: center;
 
-    padding-top: 10vh;
-
-    font-size: 28px;
+    
     font-family: 'Roboto';
 }
 
 .ricardo--font--2{
     color: var(--principal);
     text-align: center;
-
-    padding-top: 10vh;
-
-    font-size: 28px;
+    
     font-family: 'Odibee Sans';
 }
 
 .rodolfo--font--1{
     color: var(--principal);
     text-align: center;
-
-    padding-top: 2.5vh;
-
-    font-size: 28px;
+    
     font-family: 'Gugi';
 }
 
 .rodolfo--font--2{
     color: var(--principal);
     text-align: center;
-
-    padding-top: 2.5vh;
-
-    font-size: 28px;
+    
     font-family: 'Jura';
 }
 
@@ -290,9 +301,7 @@ circle {
     color: var(--principal);
     text-align: center;
 
-    padding-top: 2.5vh;
-
-    font-size: 28px;
+    
     font-family: 'Red hat display';
 }
 /*-----------------------------FONTS END---------------------------------------*/
@@ -303,7 +312,7 @@ circle {
 
     position: relative;
 
-    padding-bottom: 20vh;
+    padding-bottom: 25vh;
     
 }
 
@@ -312,14 +321,83 @@ circle {
 }
 
 .project--img--fs img{
-    max-width: 60vw;
+    max-width: 80vw;
 }
 
 .project--img--flex{
     display: flex;
     justify-content: center;
+
+    flex-wrap: wrap;
 }
 
 .project--img--flex div img{
-    max-width: 35vw;
+    max-width: 30vw;
+}
+
+/*
+------------------------------RESPONSIVE------------------------------
+*/
+@media (max-width: 1050px) {
+    .project--img--fs img{
+        max-width: 80vw;
+    }
+
+    .project--img--flex div img{
+        max-width: 30vw;
+    }
+
+    .font--container{
+        padding: 2vh 5vw 10vh 5vw;
+    }
+
+    .color--container{
+        padding: 2vh 5vw 10vh 5vw;
+    }
+
+    .project--showcase{
+        padding-bottom: 40vh;
+    }
+
+    
+}
+@media (max-width: 780px) {
+    .project--img--fs img{
+        max-width: 80vw;
+    }
+
+    .project--img--flex div img{
+        max-width: 70vw;
+    }
+
+    .svg--circle{
+        max-width: 12.5vw;
+    }
+}
+@media (max-width: 610px) {
+    .project--img--fs img{
+        max-width: 90vw;
+    }
+
+    .project--img--flex div img{
+        max-width: 80vw;
+    }
+
+    .font--size{
+        font-size: 20px;
+    }
+}
+@media (max-width: 425px) {
+
+    .two--fonts{
+        padding-top: 5vh;
+    }
+    .svg--circle{
+        max-width: 20vw;
+    }
+}
+@media (max-width: 375px) {
+    .font--size{
+        font-size: 18px;
+    }
 }

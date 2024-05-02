@@ -398,3 +398,219 @@
     min-width: 100vw;
     min-height: 30vh;
 }
+
+/*
+------------------------------RESPONSIVE------------------------------
+*/
+@media (max-width: 1050px) {
+    .landing--header{
+        font-size: 72px;
+    }
+
+    .project--title{
+        font-size: 24px;
+    }
+
+    .project--subtitle{
+        font-size: 18px;
+    }
+
+    .project--cva{
+        font-size: 14px;
+    }
+
+    .contact--title{
+        font-size: 78px;
+    }
+
+    .contact--mail{
+        font-size: 36px;
+    }
+}
+@media (max-width: 780px) {
+    .landing--header{
+        font-size: 54px;
+    }
+
+    .landing--text--about{
+        font-size: 16px;
+    }
+
+    .projects--container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .projects--element--1{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .projects--element--2{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .projects--element--3{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .projects--element--4{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .projects--element--5{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .projects--element--6{
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    .project--cva{
+        font-size: 18px;
+    }
+
+    .project--photo{
+        max-width: 30%;
+    }
+
+    .project--technologies{
+        text-align: center;
+        padding-bottom: 5vh;
+    }
+
+    .project--live{
+        font-size: 28px;
+    }
+
+    .contact--title{
+        font-size: 56px;
+    }
+
+    .contact--mail{
+        font-size: 28px;
+    }
+
+    .contact--links a{
+        font-size: 24px;
+    }
+}
+@media (max-width: 610px) {
+    .landing--header{
+        font-size: 42px;
+    }
+
+    .landing--text--about{
+        font-size: 14px;
+    }
+
+    .contact--title{
+        font-size: 42px;
+    }
+
+    .contact--mail{
+        font-size: 20px;
+    }
+
+    .contact--links a{
+        font-size: 20px;
+    }
+}
+@media (max-width: 425px) {
+    .landing--header{
+        font-size: 28px;
+    }
+
+    .landing--text--about{
+        font-size: 14px;
+
+        max-width: 40%;
+    }
+
+    .landing--img{
+        height: 50%;
+    }
+
+    .landing--text--container{
+        grid-template-rows: repeat(5, 50px);
+        
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+    }
+
+    .project--photo{
+        max-width: 80%;
+    }
+
+    .project--cva{
+        font-size: 16px;
+
+        padding-top: 10%;
+    }
+
+    .contact--title{
+        font-size: 32px;
+
+        padding-bottom: 5vh;
+        padding-top: 10vh;
+    }
+
+    .contact--mail{
+        font-size:14px;
+    }
+
+    .contact--links a{
+        font-size: 14px;
+    }
+
+    .contact--animation{
+        margin-top: 10vh;
+
+        min-height: 20vh
+    }
+
+    .border--animated{
+        min-height: 20vh;
+    }
+
+    .contact{
+        min-height: 90vh;
+    }
+}
+@media (max-width: 375px) {
+    .landing--header{
+        font-size: 24px;
+    }
+    .landing--img{
+        height: 40%;
+    }
+    .contact--title{
+        font-size: 28px;
+    }
+
+    .contact--mail{
+        font-size:12px;
+    }
+
+    .contact--links a{
+        font-size: 14px;
+    }
+}
