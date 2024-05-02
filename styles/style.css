@@ -25,7 +25,7 @@ body{
 }
 
 .navbar{
-    position: fixed;
+    position: fixed !important;
 
     min-width: 100vw;
     min-height: 75px;
@@ -105,4 +105,19 @@ body{
 .navbar--btn a:hover{
     cursor: pointer;
     color: var(--secondary);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+    margin: 0 2.5vw;
+}
+
+.footer--element{
+    color: var(--principal);
+
+    font-family: "Space Mono";
 }

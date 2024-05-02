@@ -1,0 +1,325 @@
+:root {
+    --background: #121212;
+    --principal: #fbf6e3; 
+    --secondary: #ecadad;
+}
+
+.project--info--container{
+    min-width: 100vw;
+
+    padding-top: 10vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+circle {
+    fill: transparent;
+    stroke-width: 15px;
+    stroke-dasharray: 471;
+    stroke-dashoffset: 471;
+    animation: clock-animation 3s infinite alternate;
+  }
+  @keyframes clock-animation {
+    0% {
+      stroke-dashoffset: 471;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+/*-----------------------------COLORS---------------------------------------*/
+
+.tsmorales--principal{
+    stroke: #0545A5;
+}
+
+.tsmorales--principal text{
+    fill: #0545A5;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.tsmorales--secondary{
+    stroke: #70819B;
+}
+
+.tsmorales--secondary text{
+    fill: #70819B;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.tsmorales--background{
+    stroke: #F7F6F6;
+}
+
+.tsmorales--background text{
+    fill: #F7F6F6;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.photoport--principal{
+    stroke: #82370e;
+}
+
+.photoport--principal text{
+    fill: #82370e;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.photoport--secondary{
+    stroke: #DE725C;
+}
+
+.photoport--secondary text{
+    fill: #DE725C;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.photoport--background{
+    stroke: #F2F1F1;
+}
+
+.photoport--background text{
+    fill: #F2F1F1;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.ricardo--principal{
+    stroke: #B31312;
+}
+
+.ricardo--principal text{
+    fill: #B31312;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.ricardo--secondary{
+    stroke: #EA906C;
+}
+
+.ricardo--secondary text{
+    fill: #EA906C;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.ricardo--background{
+    stroke: #F7F6F6;
+}
+
+.ricardo--background text{
+    fill: #F7F6F6;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.rodolfo--principal{
+    stroke: #3951AA;
+}
+
+.rodolfo--principal text{
+    fill: #3951AA;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.rodolfo--secondary{
+    stroke: #404E80;
+}
+
+.rodolfo--secondary text{
+    fill: #404E80;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.rodolfo--background{
+    stroke: #E5E5E5;
+}
+
+.rodolfo--background text{
+    fill: #E5E5E5;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+
+/*-----------------------------COLORS END---------------------------------------*/
+
+.color--container{
+    position: relative;
+    color: var(--principal);
+
+    padding: 15vh 5vw;
+}
+
+.color--element{
+    position: relative;
+    text-align: center;
+}
+
+.color--title{
+    color: var(--principal);
+    font-family: 'Mulish';
+
+    font-weight: 800;
+    font-size: 48px;
+
+    text-align: center;
+}
+
+.font--container{
+    position: relative;
+    color: var(--principal);
+
+    padding: 15vh 5vw;
+}
+
+.font--title{
+    color: var(--principal);
+    font-family: 'Mulish';
+
+    font-weight: 800;
+    font-size: 48px;
+
+    text-align: center;
+}
+
+/*-----------------------------FONTS---------------------------------------*/
+
+.tsmorales--font--1{
+    color: var(--principal);
+    text-align: center;
+
+    padding-top: 10vh;
+
+    font-size: 28px;
+    font-family: 'Bebas Neue';
+}
+
+.tsmorales--font--2{
+    color: var(--principal);
+    text-align: center;
+
+    padding-top: 10vh;
+
+    font-size: 28px;
+    font-family: 'Inter';
+}
+
+.photoport--font--1{
+    color: var(--principal);
+    text-align: center;
+
+    padding-top: 2.5vh;
+
+    font-size: 28px;
+    font-family: 'Abril Fatface';
+}
+
+.photoport--font--2{
+    color: var(--principal);
+    text-align: center;
+
+    padding-top: 2.5vh;
+
+    font-size: 28px;
+    font-family: 'Nothing you could do';
+}
+
+.photoport--font--3{
+    color: var(--principal);
+    text-align: center;
+
+    padding-top: 2.5vh;
+
+    font-size: 28px;
+    font-family: 'Nixie One';
+}
+
+.ricardo--font--1{
+    color: var(--principal);
+    text-align: center;
+
+    padding-top: 10vh;
+
+    font-size: 28px;
+    font-family: 'Roboto';
+}
+
+.ricardo--font--2{
+    color: var(--principal);
+    text-align: center;
+
+    padding-top: 10vh;
+
+    font-size: 28px;
+    font-family: 'Odibee Sans';
+}
+
+.rodolfo--font--1{
+    color: var(--principal);
+    text-align: center;
+
+    padding-top: 2.5vh;
+
+    font-size: 28px;
+    font-family: 'Gugi';
+}
+
+.rodolfo--font--2{
+    color: var(--principal);
+    text-align: center;
+
+    padding-top: 2.5vh;
+
+    font-size: 28px;
+    font-family: 'Jura';
+}
+
+.rodolfo--font--3{
+    color: var(--principal);
+    text-align: center;
+
+    padding-top: 2.5vh;
+
+    font-size: 28px;
+    font-family: 'Red hat display';
+}
+/*-----------------------------FONTS END---------------------------------------*/
+
+.project--showcase{
+    min-width: 100vw;
+    min-height: 100vh;
+
+    position: relative;
+
+    padding-bottom: 20vh;
+    
+}
+
+.project--img--fs{
+    text-align: center;
+}
+
+.project--img--fs img{
+    max-width: 60vw;
+}
+
+.project--img--flex{
+    display: flex;
+    justify-content: center;
+}
+
+.project--img--flex div img{
+    max-width: 35vw;
+}

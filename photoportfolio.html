@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/styles/style.css" rel="stylesheet" />
+        <link href="/styles/project.css" rel="stylesheet" />
+
+        <title>Omar Pérez</title>
+        <link rel="Page icon" href="/logos/rl.svg" />
+
+        <!--GoogleFonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nixie+One&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <!--Content that will not change between pages(navbar)-->
+
+        <!--Content of the page-->
+        <!--Main Home Section-->
+        <div class="home" style="min-height: 100vh;">
+            <nav class="navbar">
+                <div class="nav--bottom--line"></div>
+                <div class="nav--flex--container--1">
+                  <div class="navbar--icon"><a class="return--btn" href="/index.html">[OPG]</a></div>
+                </div>
+      
+                <div class="nav--flex--container--2">
+                  <div class="navbar--btn" id="contact"><a class="return--btn" href="index.html">BACK</a></div>
+                </div>
+      
+            </nav>
+
+            <section class="project--info--container">
+                <div class="color--container">
+                    <div class="color--title">
+                        COLOR PALETTE
+                    </div>
+                    <div class="color--element">
+                        <svg class="photoport--principal">
+                            <circle cx="50%" cy="50%" r="50"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">#82370E</text>
+                        </svg>
+                    </div>
+    
+                    <div class="color--element">
+                        <svg class="photoport--secondary">
+                            <circle cx="50%" cy="50%" r="50"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">#DE725C</text>
+                        </svg>
+                    </div>
+    
+                    <div class="color--element">
+                        <svg class="photoport--background">
+                            <circle cx="50%" cy="50%" r="50"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">#F2F1F1</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="font--container">
+                    <div class="font--title">
+                        FONTS
+                    </div>
+
+                        <div class="photoport--font--1">
+                            Abril Fatface<br>
+                            #123456789<br>
+                            abcdefghijklmnopqrstuvwxyz<br>
+                            ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                        </div>
+                        <div class="photoport--font--2">
+                            Nothing you could do<br>
+                            #123456789<br>
+                            abcdefghijklmnopqrstuvwxyz<br>
+                            ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                        </div>
+                        <div class="photoport--font--3">
+                            Nixie One<br>
+                            #123456789<br>
+                            abcdefghijklmnopqrstuvwxyz<br>
+                            ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                        </div>
+                </div>
+            </section>
+
+            <section class="project--showcase">
+
+                <div class="project--img--flex">
+                    <div class="item-img">
+                        <img src="/img/projects/PhotoPortfolio/1.png">
+                    </div>
+
+                    <div class="item-img">
+                        <img src="/img/projects/PhotoPortfolio/2.png">
+                    </div>
+                </div>
+
+                <div class="project--img--flex">
+                    <div class="item-img">
+                        <img src="/img/projects/PhotoPortfolio/3.png">
+                    </div>
+
+                    <div class="item-img">
+                        <img src="/img/projects/PhotoPortfolio/4.png">
+                    </div>
+                </div>
+
+                <div class="project--img--flex">
+                    <div class="item-img">
+                        <img src="/img/projects/PhotoPortfolio/5.png">
+                    </div>
+
+                    <div class="item-img">
+                        <img src="/img/projects/PhotoPortfolio/6.png">
+                    </div>
+
+                    <div class="item-img">
+                        <img src="/img/projects/PhotoPortfolio/7.png">
+                    </div>
+                </div>
+
+                <div class="project--img--fs item-img">
+                    <img src="/img/projects/PhotoPortfolio/8.png">
+                </div>
+            </section>
+
+            <section class="footer">
+                <div class="footer--element">Coded by Omar Pérez</div>
+                <div class="footer--element">May 2024</div>
+            </section>
+        </div>
+
+        <!--Main JS-->
+        <script defer src="/scripts/main.js"></script>
+        <script defer src="/scripts/project.js"></script>
+
+        <!--GSAP and plugins-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        
+        <!--Lenis-->
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+
+        <!--Barba JS-->
+        <script src="https://unpkg.com/@barba/core"></script>
+
+    </body>
+</html>

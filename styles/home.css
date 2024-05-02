@@ -70,21 +70,11 @@
 }
 
 .landing--img{
-    width: 100%;
+    width: 95%;
     height: 80%;
     object-fit: cover;
 
     margin: auto;
-}
-
-.landing--img--1{
-    grid-column-start: 8;
-    grid-column-end: 17;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-    object-position: 50% 50%;
-    filter:brightness(.4);
 }
 
 .landing--img--2{
@@ -145,6 +135,10 @@
 
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(2, 500px);
+}
+
+.projects--container a{
+    text-decoration: none;
 }
 
 .projects--element--1{
@@ -403,17 +397,4 @@
 
     min-width: 100vw;
     min-height: 30vh;
-}
-
-.footer{
-    display: flex;
-    justify-content: space-between;
-
-    margin: 0 2.5vw;
-}
-
-.footer--element{
-    color: var(--principal);
-
-    font-family: "Space Mono";
 }

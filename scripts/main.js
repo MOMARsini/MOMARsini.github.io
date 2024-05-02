@@ -3,7 +3,6 @@ let lenis;
 //NEW CODE
 const init = () => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.registerPlugin(TextPlugin);
 
     runLenis();
 };

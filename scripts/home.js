@@ -5,9 +5,18 @@ const home = document.getElementById('home');
 const work = document.getElementById('work');
 const contact = document.getElementById('contact');
 
+const tsmorales = document.getElementById('tsmorales');
+const photoportfolio = document.getElementById('photoportfolio');
+const ricardo = document.getElementById('ricardo');
+const rodolfo = document.getElementById('rodolfo');
+
 const icons = document.querySelectorAll('.icon--techno');
 
+let tlContact, tlIcons, tlLanding;
+
 const initHome = () => {
+    gsap.from('.landing', {opacity: 0, y:100, duration: 1});
+
     runAnimations();
 
     runNavbar();
@@ -27,14 +36,14 @@ const runLenisScroll = (element, ubication) => {
 
 
 const runAnimations = () => {
-    const tlContact = gsap.timeline({
+    tlContact = gsap.timeline({
         repeat: -1,
         yoyo:true
     });
     tlContact.from(animated,{scale:0, stagger: 0.25, duration: 1});
 
     //Slider image animation on scrolling
-    const tlLanding = gsap.timeline({
+    tlLanding = gsap.timeline({
         scrollTrigger: {
             trigger: ".landing",
             start: "top top", // Animation starts when the top of the container hits the top of the viewport
@@ -59,9 +68,6 @@ const runAnimations = () => {
         y: window.innerHeight / 4,
     }, 0);
     
-    tlLanding.to(".landing--img--1", {
-        y: -window.innerHeight / 4,
-    }, 0);
     tlLanding.to(".landing--text--3", {
         y: -window.innerHeight / 4,
     }, 0);
@@ -72,7 +78,7 @@ const runAnimations = () => {
         y: -window.innerHeight / 4,
     }, 0);
 
-    const tlIcons = gsap.timeline({
+    tlIcons = gsap.timeline({
         repeat: -1,
         yoyo: true,
     });

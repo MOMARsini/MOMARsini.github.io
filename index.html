@@ -18,26 +18,25 @@
         
     </head>
 
-    <body data-barba="wrapper">
+    <body>
         <!--Content that will not change between pages(navbar)-->
+        <nav class="navbar">
+            <div class="nav--bottom--line"></div>
+            <div class="nav--flex--container--1">
+              <div class="navbar--icon"><a>[OPG]</a></div>
+            </div>
+  
+            <div class="nav--flex--container--2">
+              <div class="navbar--btn" id="home"><a>HOME</a></div>
+              <div class="navbar--btn" id="work"><a>WORK</a></div>
+              <div class="navbar--btn" id="contact"><a>CONTACT</a></div>
+            </div>
+  
+        </nav>
 
         <!--Content of the page-->
         <!--Main Home Section-->
-        <div data-barba="container" class="home">
-            <nav class="navbar">
-                <div class="nav--bottom--line"></div>
-                <div class="nav--flex--container--1">
-                  <div class="navbar--icon"><a>[OPG]</a></div>
-                </div>
-      
-                <div class="nav--flex--container--2">
-                  <div class="navbar--btn" id="home"><a>HOME</a></div>
-                  <div class="navbar--btn" id="work"><a>WORK</a></div>
-                  <div class="navbar--btn" id="contact"><a>CONTACT</a></div>
-                </div>
-      
-            </nav>
-
+        <div class="home">
             <section class="landing">
                 <div class="landing--text--container">
                     <div class="landing--text--1 landing--header">I'M OMAR</div>
@@ -56,48 +55,53 @@
 
             <section class="projects">
                 <div class="projects--container">
-                    <div class="projects--element--1 projects--element">
-                        <img src="/img/TSMoralesProject.png" class="project--photo">
-                        <div class="project--title">
-                            TS MORALES
-                        </div>
-                        <div class="project--subtitle">
-                            Website from scratch
-                        </div>
-                        <div class="project--info">
-                            <div class="project--role">
-                                Web Designer and Developer
+                    <a href="tsmorales.html">
+                        <div class="projects--element--1 projects--element" id="tsmorales">
+                            <img src="/img/TSMoralesProject.png" class="project--photo">
+                            <div class="project--title">
+                                TS MORALES
                             </div>
-                            <div class="project--date">
-                                March 2024
+                            <div class="project--subtitle">
+                                Website from scratch
                             </div>
-                            <div class="project--live">
-                                <a href="https://tsmorales.netlify.app" target="_blank">Go to project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects--element--2 projects--element">
-                        <img src="/img/PhotoPortfolio.png" class="project--photo">
-                        <div class="project--title">
-                            Photo Portfolio
-                        </div>
-                        <div class="project--subtitle">
-                            Personal project
-                        </div>
-                        <div class="project--info">
-                            <div class="project--role">
-                                Web Designer and Developer
-                            </div>
-                            <div class="project--date">
-                                April 2024
-                            </div>
-                            <div class="project--live">
-                                <a href="https://omarperezphoto.netlify.app" target="_blank">Go to project</a>
+                            <div class="project--info">
+                                <div class="project--role">
+                                    Web Designer and Developer
+                                </div>
+                                <div class="project--date">
+                                    March 2024
+                                </div>
+                                <div class="project--live">
+                                    <a href="https://tsmorales.netlify.app" target="_blank">Go to project</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
+                    <a href="photoportfolio.html">
+                        <div class="projects--element--2 projects--element" id="photoportfolio">
+                            <img src="/img/PhotoPortfolio.png" class="project--photo">
+                            <div class="project--title">
+                                Photo Portfolio
+                            </div>
+                            <div class="project--subtitle">
+                                Personal project
+                            </div>
+                            <div class="project--info">
+                                <div class="project--role">
+                                    Web Designer and Developer
+                                </div>
+                                <div class="project--date">
+                                    April 2024
+                                </div>
+                                <div class="project--live">
+                                    <a href="https://omarperezphoto.netlify.app" target="_blank">Go to project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                     <div class="projects--element--3 project--cva">
-                        Started working in CVA (Centro Virtual de Aprendizaje) I learned a lot about web development and design. The goal of this association is to bring interactive and educative courses to people in Mexico. My main tasks were to edit and fix some courses and develop a interactive german course, where I worked with a partner and created some interesting games and activities. Sadly, I can't show what I did due to confidenciality, but we can talk about it!
+                        I started a project with CVA (Centro Virtual de Aprendizaje) a lifelong learning method where I worked with web development and design. The principal goal of this project was bringing interactive and educative courses that helps students all around Mexico. 
+                        Fixing and editing courses I was able to increase my knowledge about design, like creating interesting and interactive German courses that had helped to learn a little be easier and fun for every student. 
                     </div>
                     <div class="projects--element--4 project--technologies">
                         <div>I have worked with</div>
@@ -109,46 +113,50 @@
                         <img src="/img/icons/sql.svg" class="icon--techno">
                     </div>
 
-                    <div class="projects--element--5 projects--element">
-                        <img src="/img/PortfolioDesign.png" class="project--photo">
-                        <div class="project--title">
-                            Ricardo's Portfolio
-                        </div>
-                        <div class="project--subtitle">
-                            Web portfolio
-                        </div>
-                        <div class="project--info">
-                            <div class="project--role">
-                                Web Designer
+                    <a href="ricardoportfolio.html">
+                        <div class="projects--element--5 projects--element"  id="ricardo">
+                            <img src="/img/PortfolioDesign.png" class="project--photo">
+                            <div class="project--title">
+                                Ricardo's Portfolio
                             </div>
-                            <div class="project--date">
-                                March 2024
+                            <div class="project--subtitle">
+                                Web portfolio
                             </div>
-                            <div class="project--live">
-                                <a href="https://ricardoleija.com/" target="_blank">Go to project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects--element--6 projects--element">
-                        <img src="/img/PortfolioRodolfo.png" class="project--photo">
-                        <div class="project--title">
-                            Rodolfo's Portfolio
-                        </div>
-                        <div class="project--subtitle">
-                            Web portfolio
-                        </div>
-                        <div class="project--info">
-                            <div class="project--role">
-                                Web Designer and Developer
-                            </div>
-                            <div class="project--date">
-                                April 2024
-                            </div>
-                            <div class="project--live">
-                                <a href="https://rleija.com.mx" target="_blank">Go to project</a>
+                            <div class="project--info">
+                                <div class="project--role">
+                                    Web Designer
+                                </div>
+                                <div class="project--date">
+                                    March 2024
+                                </div>
+                                <div class="project--live">
+                                    <a href="https://ricardoleija.com/" target="_blank">Go to project</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
+                    <a href="rodolfoportfolio.html">
+                        <div class="projects--element--6 projects--element" id="rodolfo">
+                            <img src="/img/PortfolioRodolfo.png" class="project--photo">
+                            <div class="project--title">
+                                Rodolfo's Portfolio
+                            </div>
+                            <div class="project--subtitle">
+                                Web portfolio
+                            </div>
+                            <div class="project--info">
+                                <div class="project--role">
+                                    Web Designer and Developer
+                                </div>
+                                <div class="project--date">
+                                    April 2024
+                                </div>
+                                <div class="project--live">
+                                    <a href="https://rleija.com.mx" target="_blank">Go to project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </section>
 
