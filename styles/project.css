@@ -1,7 +1,26 @@
 :root {
     --background: #121212;
-    --principal: #fbf6e3; 
-    --secondary: #ecadad;
+    --principal: #424242; 
+    --secondary: #fbf6e3;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.navbar{
+
+    mix-blend-mode: unset !important;
+    filter: unset !important;
+}
+
+.navbar--icon a{
+    color: var(--secondary);
+
+}
+
+.navbar--btn a{
+    color: var(--secondary);
 }
 
 .project--info--container{
@@ -16,7 +35,7 @@
 }
 
 .svg--circle {
-  fill: var(--principal);
+  fill: var(--secondary);
   height: auto;
   max-width: 7.5vw;
   transform-origin: center;
@@ -177,7 +196,7 @@ circle {
 
 .color--container{
     position: relative;
-    color: var(--principal);
+    color: var(--secondary);
 
     padding: 15vh 5vw;
 }
@@ -188,7 +207,7 @@ circle {
 }
 
 .color--title{
-    color: var(--principal);
+    color: var(--secondary);
     font-family: 'Mulish';
 
     font-weight: 800;
@@ -199,13 +218,13 @@ circle {
 
 .font--container{
     position: relative;
-    color: var(--principal);
+    color: var(--secondary);
 
     padding: 15vh 5vw;
 }
 
 .font--title{
-    color: var(--principal);
+    color: var(--secondary);
     font-family: 'Mulish';
 
     font-weight: 800;
@@ -229,7 +248,7 @@ circle {
 /*-----------------------------FONTS---------------------------------------*/
 
 .tsmorales--font--1{
-    color: var(--principal);
+    color: var(--secondary);
     text-align: center;
 
     
@@ -237,7 +256,7 @@ circle {
 }
 
 .tsmorales--font--2{
-    color: var(--principal);
+    color: var(--secondary);
     text-align: center;
 
     
@@ -245,7 +264,7 @@ circle {
 }
 
 .photoport--font--1{
-    color: var(--principal);
+    color: var(--secondary);
     text-align: center;
 
     
@@ -253,7 +272,7 @@ circle {
 }
 
 .photoport--font--2{
-    color: var(--principal);
+    color: var(--secondary);
     text-align: center;
 
     
@@ -261,7 +280,7 @@ circle {
 }
 
 .photoport--font--3{
-    color: var(--principal);
+    color: var(--secondary);
     text-align: center;
 
     
@@ -269,7 +288,7 @@ circle {
 }
 
 .ricardo--font--1{
-    color: var(--principal);
+    color: var(--secondary);
     text-align: center;
 
     
@@ -277,28 +296,28 @@ circle {
 }
 
 .ricardo--font--2{
-    color: var(--principal);
+    color: var(--secondary);
     text-align: center;
     
     font-family: 'Odibee Sans';
 }
 
 .rodolfo--font--1{
-    color: var(--principal);
+    color: var(--secondary);
     text-align: center;
     
     font-family: 'Gugi';
 }
 
 .rodolfo--font--2{
-    color: var(--principal);
+    color: var(--secondary);
     text-align: center;
     
     font-family: 'Jura';
 }
 
 .rodolfo--font--3{
-    color: var(--principal);
+    color: var(--secondary);
     text-align: center;
 
     
