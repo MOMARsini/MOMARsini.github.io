@@ -63,15 +63,15 @@ const runAnimations = () => {
         scrollTrigger: {
             trigger: ".landing",
             start: "top top", // Animation starts when the top of the container hits the top of the viewport
-            end: "bottom top", // Animation ends when the bottom of the container hits the top of the viewport
+            end: "center top", // Animation ends when the center of the container hits the top of the viewport
             scrub: true, // Smoothly animates the changes
             //markers: true, // For debugging, can be removed
             pin: false,
         }
     });
     // Define individual tweens for each image
-    //Image---------------------------------------------------------------------------
-    
+    tlLanding.to(".landing--title", { y: '250px' }, 'landing');
+    tlLanding.to(".landing--text", { y: '100px', opacity: '0' }, 'landing');
 
     tlIcons = gsap.timeline({
         repeat: -1,
