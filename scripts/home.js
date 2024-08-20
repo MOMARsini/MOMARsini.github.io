@@ -151,10 +151,10 @@ const notes = () => {
         currentIndex = (currentIndex + 1) % notes.length;
         
         // Hide the note after 2 seconds and remove it from the container
-        // setTimeout(() => {
-        //     newNote.style.display = 'none';
-        //     newNote.remove();
-        // }, 5000);
+        setTimeout(() => {
+            newNote.style.display = 'none';
+            newNote.remove();
+        }, 5000);
     });
 };
 
