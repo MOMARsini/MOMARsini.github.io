@@ -131,32 +131,32 @@ circle {
     stroke: none;
 }
 
-.ricardo--principal{
-    stroke: #B31312;
-}
-
-.ricardo--principal text{
-    fill: #B31312;
-    font-family: 'Space Mono';
-    stroke: none;
-}
-
-.ricardo--secondary{
-    stroke: #EA906C;
-}
-
-.ricardo--secondary text{
-    fill: #EA906C;
-    font-family: 'Space Mono';
-    stroke: none;
-}
-
-.ricardo--background{
+.aztech--principal{
     stroke: #F7F6F6;
 }
 
-.ricardo--background text{
+.aztech--principal text{
     fill: #F7F6F6;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.aztech--secondary{
+    stroke: #D9D9D9;
+}
+
+.aztech--secondary text{
+    fill: #D9D9D9;
+    font-family: 'Space Mono';
+    stroke: none;
+}
+
+.aztech--background{
+    stroke: #000000;
+}
+
+.aztech--background text{
+    fill: #000000;
     font-family: 'Space Mono';
     stroke: none;
 }
@@ -287,19 +287,19 @@ circle {
     font-family: 'Nixie One';
 }
 
-.ricardo--font--1{
+.aztech--font--1{
     color: var(--secondary);
     text-align: center;
 
     
-    font-family: 'Roboto';
+    font-family: "Raleway", sans-serif;
 }
 
-.ricardo--font--2{
+.aztech--font--2{
     color: var(--secondary);
     text-align: center;
     
-    font-family: 'Odibee Sans';
+    font-family: "Bodoni Moda SC", serif;
 }
 
 .rodolfo--font--1{
